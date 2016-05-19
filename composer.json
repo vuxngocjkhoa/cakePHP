@@ -1,0 +1,25 @@
+{
+    "name": "cakephp/app",
+    "description": "CakePHP",
+    "homepage": "http://cakephp.org",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "2.8.*",
+        "mobiledetect/mobiledetectlib": "2.*",
+        "cakephp/plugin-installer": "*"
+    },
+    "require-dev": {
+        "psy/psysh": "@stable"
+    },
+    "suggest": {
+        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+    },
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/{$name}/": ["type:cakephp-plugin"]
+        }
+    }
+}
